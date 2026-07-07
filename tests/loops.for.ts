@@ -3,6 +3,7 @@
 // syntax
 // for(initilization; condition; increment/decrement);
 
+
 // initilization : runs once before the loop starts
 // condition : checked before every iteration
 // increment/decrement : runs after each iteration
@@ -53,21 +54,21 @@ for (let i = 0; i < browsers.length; i++) {
 
 // Array of objects
 let employees = [
-    {id:1, name:"Shubham"},
-    {id:2, names:"Rahul"},
-    {id:3, namess:"Amit"}   
+    { id: 1, name: "Shubham" },
+    { id: 2, names: "Rahul" },
+    { id: 3, namess: "Amit" }
 ];
 
-for(let i = 0; i<employees.length; i++) {
+for (let i = 0; i < employees.length; i++) {
     console.log(employees[i].name);
     console.log(employees[i].names);
     console.log(employees[i].namess);
 }
 
 // Nested for loop
-for(let i = 1; i<=3; i++) {
-    for(let j = 1; j<=3; i++) {
-        console.log(i,j);
+for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 3; i++) {
+        console.log(i, j);
     }
 
 }
@@ -75,8 +76,8 @@ for(let i = 1; i<=3; i++) {
 
 // Using break
 // stops the looops immedietely
-for(let i =1; i<=10; i++) {
-    if(i==6) {
+for (let i = 1; i <= 10; i++) {
+    if (i == 6) {
         break;
     }
 
@@ -85,8 +86,8 @@ for(let i =1; i<=10; i++) {
 
 // Using continue
 // skips the current iteration
-for(let i = 1; i<=5; i++) {
-    if(i==3) {
+for (let i = 1; i <= 5; i++) {
+    if (i == 3) {
         continue;
 
     }
@@ -112,7 +113,215 @@ for(let i = 1; i<=5; i++) {
 // click multiple elements
 // verify list of products links or rows
 
+// while loop
+// a while loop repeatedely executes a block of code as long as specified conditio is true
+// it is useful when you don't know in advance how many times the loop should run
+// syntax
+// while(condition) {
+// code to execute
+// }
+
+// Print numbers 1 to 5
+let i: number = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+
+// Print even numbers
+let nums: number = 2;
+while (nums <= 10) {
+    console.log(nums);
+    num += 2;
+}
+
+// countdown
+let count: number = 10;
+while (count < 0) {
+    console.log(count);
+    count--;
+}
+
+// Print Array
+let fruits: string[] = ["APPLE", "MANGO", "BANANA"];
+let index = 0;
+while (index < fruits.length) {
+    console.log(fruits[index]);
+    index++;
+}
+
+// SUM OF NUMBERS
+let a = 1;
+let sums = 0;
+while (a <= 5) {
+    sum += a;
+    a++;
+}
+console.log(sums);
+
+// Infinite loop example
+let b = 1;
+while (b <= 5) {
+    console.log(b);
+}
+
+// while with break
+let q = 1;
+while (true) {
+    if (q == 10) {
+        break;
+    }
+    console.log(q);
+    q++;
+}
+
+// while with continue
+let s = 0;
+
+while (s < 5) {
+    s++;
+
+    if (s == 3) {
+        continue;
+    }
+    console.log(s);
+}
+
+// while in playwright automation
+// a while loop can be useful when waiting for a condition that changes dynamically
+// playwright built in auto waiting and assertions are generally preferred over cutom loops
+
+// let retries:0;
+
+// while(retries<3){
+//     try{
+//         await page.click("#submit");
+//         break;
+//     } catch(error) {
+//         retries;
+//     }
+//     )
+// }
+
+
+// what is a while loop
+// a loop that executes repeatedely while the condition remains true
+
+
+// when should you use a while loop
+// when the number of iterations is not known beforehand
+
+
+// difference between for and while loop
+// for : best when you know how many iterations are needed
+// while : best when the loop continues untila  condition becomes false
+
+// can we use break and continue with while
+// break : exits the loop immediately
+// continue: skips the rest of the current iteration and continues with the next one
+
+
+
+// do while
+// The do while loop executes a block of code at least once
+// and then continues repeating the loop as long as the condition is true
+// syntax:
+// do{
 // 
+// } while(condition);
+
+// Print numbers from 1 to 5
+let d: number = 1;
+
+do {
+    console.log(d);
+    d++;
+
+} while (d <= 5);
+
+// condition is false initially
+
+let nnum: number=10;
+
+do{
+    console.log("Executed once");
+} while(nnum<5);
+
+// what is a do while loop?
+// a do while loop executes the code block first and then checks the condition
+// Therefore is always run at least once
+
+
+// what is the difference between while and do while
+// while checks the condition before executing the loop body
+// do while checks the condition after executing the loop body
+
+// when should you use a do while loop
+// use it when the loop body must execute at least once
+// login retry logic
+// menu driven programs
+// user input validation
+// retry mechanisms in automation
+
+
+// can a do while loop become an infinite loop
+// yes if the condition always evaluates to true
+
+
+// Print even numbers
+let even: number=2;
+
+do{
+    console.log(even);
+    even+=2;
+} while(even<=10);
+
+// SUM OF NUMBERS 1TO5
+let v: number=1;
+let summ: number=0;
+
+do{
+    sum+=v;
+    v++;
+
+} while (v<=5);
+console.log("SUM=", summ);
+
+
+// COUNTDOWN
+let counts : number=6;
+
+do{
+    console.log(counts);
+    counts--;
+
+} while(counts>=1);
+
+
+// INFINITE LOOP
+do{
+    console.log("HELLO");
+
+} while(true);
+
+// Reverse counting
+let n=10;
+
+do{
+    console.log(n);
+    n--;
+} while(n>=1);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

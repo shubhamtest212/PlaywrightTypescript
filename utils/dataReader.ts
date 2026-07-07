@@ -22,5 +22,9 @@ export function readData(filePath: string, sheetName?: string) {
             console.log(".. I am reading JSON..");
             const JSONData = fs.readFileSync(filePath, 'utf-8');
             return JSON.parse(JSONData);
+
+            default:
+                throw new Error(`Unsupported file type-${ext}`);
+
     }
 }

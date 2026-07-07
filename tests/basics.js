@@ -1,3 +1,6 @@
+import strict from "node:assert/strict";
+import { Interface } from "node:readline";
+
 export let name = 'Shubham';
 console.log(`hello ${name}`);
 // Variables
@@ -105,3 +108,24 @@ let person = {
     name: "shubham", age: 27, designation: "Software Developnment Engineer in Test", dob: 1999, education: "Master_of_computer_application", subdepartment: "Information Technology & Information Engineering"
 };
 console.log(person);
+
+
+// interface
+
+interface employee{
+    firstName:String,
+    lastName:String,
+    ID:number
+
+}
+function getEmployees(empDetails: employee) {
+    console.log(empDetails.firstName);
+    console.log(empDetails.lastName);
+    console.log(empDetails.ID);
+
+}
+getEmployees({
+    firstName: 'Shubham',
+    lastName: 'Jogdand',
+    ID: 1122
+})

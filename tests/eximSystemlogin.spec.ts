@@ -7,9 +7,16 @@ test('Exim Login', async ({ page }) => {
 
 });
 
-test('RB System', async({page}) => {
+test('RB System', async ({page}) => {
 
     console.log('..I am login in the Rocketbees System..');
     await page.goto('https://stagecourier.rocketbees.in/rb_b2c_cms/');
+
+});
+
+test('Facebook Login', async ({page}) => {
+
+    console.log('..I am login in the Facebook System..');
+    await page.goto('https://www.facebook.com');
 
 });

@@ -1,0 +1,15 @@
+import { test } from '@playwright/test';
+
+test('Exim Login', async ({ page }) => {
+
+    console.log('..I am login in the Exim System..');
+    await page.goto('https://stagelogistics.brainbees.com/login');
+
+});
+
+test('RB System', async({page}) => {
+
+    console.log('..I am login in the Rocketbees System..');
+    await page.goto('https://stagecourier.rocketbees.in/rb_b2c_cms/');
+
+});

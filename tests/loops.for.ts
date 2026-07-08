@@ -410,8 +410,47 @@ for (const key in loginData) {
 }
 
 
+// Typescript loop : for..of
+// The for..of loop is used to iterate over the values of an iterable object such as
+// Array
+// String
+// Map
+// Set
 
+// Iterate through an array
+let browser: ["chrome", "firefox", "Edge"];
 
+for (let browser of browsers) {
+    console.log(browser);
+
+}
+
+// Iterate through a string
+let company = "Playwright";
+
+for(let letter of company){
+    console.log(letter);
+}
+
+// Iterate through numbers Array
+let numbers = [10,20,30,40];
+
+for(let num of numbers){
+    console.log(num);
+}
+
+// Key points to remember
+// use for..of to iterate over values
+// it works with array, string, maps, sets and other iterables
+// it does not work directly with plain objects
+// it is cleaner and more readable than using indexes when you only need the values
+
+// Interview coding example
+let namessss=["Shubham","Rahul","Amit"];
+
+for(let name of namessss){
+    console.log(`Hello  $ {name}`);
+}
 
 
 

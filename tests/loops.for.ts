@@ -241,11 +241,11 @@ do {
 
 // condition is false initially
 
-let nnum: number=10;
+let nnum: number = 10;
 
-do{
+do {
     console.log("Executed once");
-} while(nnum<5);
+} while (nnum < 5);
 
 // what is a do while loop?
 // a do while loop executes the code block first and then checks the condition
@@ -269,48 +269,151 @@ do{
 
 
 // Print even numbers
-let even: number=2;
+let even: number = 2;
 
-do{
+do {
     console.log(even);
-    even+=2;
-} while(even<=10);
+    even += 2;
+} while (even <= 10);
 
 // SUM OF NUMBERS 1TO5
-let v: number=1;
-let summ: number=0;
+let v: number = 1;
+let summ: number = 0;
 
-do{
-    sum+=v;
+do {
+    sum += v;
     v++;
 
-} while (v<=5);
+} while (v <= 5);
 console.log("SUM=", summ);
 
 
 // COUNTDOWN
-let counts : number=6;
+let counts: number = 6;
 
-do{
+do {
     console.log(counts);
     counts--;
 
-} while(counts>=1);
+} while (counts >= 1);
 
 
 // INFINITE LOOP
-do{
+do {
     console.log("HELLO");
 
-} while(true);
+} while (true);
 
 // Reverse counting
-let n=10;
+let n = 10;
 
-do{
+do {
     console.log(n);
     n--;
-} while(n>=1);
+} while (n >= 1);
+
+
+// Typescript loops : for in
+// for in loop is used to iterate over the keys property names of an object
+// it can also iterate over array indexes
+// but for..of is generally preferred for arrays
+
+for (let key in Object) {
+
+}
+
+// key represents the property name or array index
+// object the object whose properties you want to iterate
+
+// Iterate over an object
+let emplo = {
+    id: 101,
+    name: "Shubham",
+    role: "QA Engineer"
+};
+
+for (let key in emplo) {
+    console.log(key);
+}
+
+// Print keys and values
+let dd = {
+    id: 1001,
+    name: "Shubham Jogdand",
+    role: "Automation QA Engineer"
+};
+
+for (let key in dd) {
+    console.log(key + ":" + emplo[key as typeof emplo]);
+}
+
+// Iterate over an Array(Indexes)
+let fruitss = ["Apple", "Mango", "Banan"];
+
+for (let index in fruitss) {
+    console.log(index);
+}
+
+// Here for..in returns the indexes not the values
+
+// Array Index and values
+let First = ["Apple", "Mango", "Banan"];
+
+for (let index in First) {
+    console.log(index + ":" + First[index]);
+}
+
+
+// Iterate over a string
+let Name = "Shubham";
+
+for (let index in Name) {
+    console.log(index + ":" + Name[index]);
+
+
+}
+
+// what is the purpose of for..in?
+// it is used to iterate over the property names(keys) of an object
+
+// Does for..in return values
+// No it returns keys or array indexes. You use the key to access the value
+
+let obj = { name: "Shubham" };
+
+for (let key in obj) {
+    console.log(obj[key as typeof obj]);
+}
+
+// can for..in be used with arrays?
+// yes but it returns indexes not values for arrays for..of is usually the better choice
+
+// what is the difference between for..in or for..of?
+// for..in- iterates over the keys/indexes
+// for..of- iterates over the values
+
+// when should you use for..in?
+// enumerating object properties
+// dynamically accessing the object keys
+
+// Playwright interview questions
+// suppose you store test data in an object
+
+const loginData = {
+    username: "Shubham",
+    password: "Shubham123"
+};
+
+for (const key in loginData) {
+    console.log(`${key}:${loginData[key as typeof loginData]}`);
+
+}
+
+
+
+
+
+
 
 
 

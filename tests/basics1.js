@@ -29,15 +29,19 @@ let employeeName = 'SHubham';
 console.log(employeeName);
 employeeName = 'Shrikant';
 console.log(employeeName);
+
 // const
 const company = 'Firstcry';
 console.log(company);
+
 //  company='Brainbees';  constant is not getting change
+
 // var
 var age1 = 25;
 console.log(age1);
 age1 = 27;
 console.log(age1);
+
 // Boolean
 let isLoggedIn = true;
 console.log(isLoggedIn);
@@ -45,13 +49,17 @@ let isQAEngineer = true;
 let hasOffer = false;
 console.log(isQAEngineer);
 console.log(hasOffer);
+
 // Any
 let data = "Hello";
 console.log(data);
+
 // data = 100;
 console.log(data);
+
 // data = true;
 console.log(data);
+
 let result;
 result = "Pass";
 result = 100;

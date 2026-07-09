@@ -3,6 +3,8 @@
 // syntax
 // for(initilization; condition; increment/decrement);
 
+import { array } from "node:stream/iter";
+
 
 // initilization : runs once before the loop starts
 // condition : checked before every iteration
@@ -428,14 +430,14 @@ for (let browser of browsers) {
 // Iterate through a string
 let company = "Playwright";
 
-for(let letter of company){
+for (let letter of company) {
     console.log(letter);
 }
 
 // Iterate through numbers Array
-let numbers = [10,20,30,40];
+let numbers = [10, 20, 30, 40];
 
-for(let num of numbers){
+for (let num of numbers) {
     console.log(num);
 }
 
@@ -446,11 +448,98 @@ for(let num of numbers){
 // it is cleaner and more readable than using indexes when you only need the values
 
 // Interview coding example
-let namessss=["Shubham","Rahul","Amit"];
+let namessss = ["Shubham", "Rahul", "Amit"];
 
-for(let name of namessss){
+for (let name of namessss) {
     console.log(`Hello  $ {name}`);
 }
+
+
+// Typescript : loops : forEach()
+// The forEach() method is used to iterate through each element of an array
+// It executes a callback function once for every array element
+
+array.forEach((element, index, array) => {
+
+
+});
+
+// element : current array element
+// index: Index of the current element
+// array: The original array
+
+// Print array elements
+let firstcry: string[] = ["Apple", "Mango", "Banana"];
+
+firstcry.forEach((firstcry) => {
+    console.log(firstcry);
+});
+
+// Print element with index
+let brainbees: string[] = ["chrome", "firefox", "safari"];
+
+brainbees.forEach((brainb, index) => {
+    console.log(`${index}: ${brainbees}`);
+});
+
+// Print all parameters
+let number: number[] = [10, 20, 30];
+
+number.forEach((value, index, array) => {
+    console.log("value:", value);
+    console.log("Index:", index);
+    console.log("Array:", array);
+});
+
+// what is forEach() in typescript
+// forEach() is an array method that executes a callback function once for each element in the array
+
+// can forEach() be used with objects?
+// No it works directly with arrays
+// to iterate over object properties use for..in 
+// or object.keys()
+// object.values()
+// object.entries()
+
+// can we use break or continue inside forEach()?
+// No forEach() does not support break or continue 
+// use a for. for..of, or while loop if you need to stop or skip iterations
+
+// Does forEach() return a new array?
+// no it always returns undefined
+// to create a new array
+// use methods like map() or filter()
+
+// sum of Array elements
+let numbersss: number[] = [10, 20, 30, 40];
+
+let sumss = 0;
+
+numbersss.forEach((num) => {
+    sumss += num;
+});
+console.log("sum=", sumss);
+
+
+// Array of objects
+let femploees=[
+    {id:101,name:"Shubham"},
+    {id:102,name:"Rahul"},
+    {id:103,name:"Amit"}
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

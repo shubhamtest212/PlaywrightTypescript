@@ -1,7 +1,7 @@
 {
   "name": "playwrighttypescriptproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "done",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
@@ -18,5 +18,16 @@
   "dependencies": {
     "csv-parse": "^7.0.1",
     "xlsx": "^0.18.5"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhamtest212/PlaywrightTypescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shubhamtest212/PlaywrightTypescript/issues"
+  },
+  "homepage": "https://github.com/shubhamtest212/PlaywrightTypescript#readme"
 }

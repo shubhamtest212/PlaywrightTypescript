@@ -69,5 +69,3 @@ function student(name: string, city?: string): void {
 
 student("Shubham");
 student("Rahul", "Pune");
-
-// 

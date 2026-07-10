@@ -20,5 +20,5 @@ test('Typescript & Playwright Project', async ({ page }) => {
   await page.getByText('play').click();
   await page.getByRole('listitem').filter({ hasText: 'play' }).getByTestId('todo-item-toggle').check();
   await expect(page.getByRole('button', { name: 'Clear completed' })).toBeVisible();
-//   await page.getByTestId('footer').click();
+  await page.getByTestId('footer').click();
 });

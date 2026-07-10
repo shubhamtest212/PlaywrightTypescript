@@ -1,6 +1,6 @@
 // Typescript : Function : normal
 
-// A normal function in typescript is the most common way to defina a function
+// A normal function in typescript is the most common way to define a function
 // it used the function keyword and can have paramters a return type and optional default parameters
 
 // Function Without Parameters and Without Return Value
@@ -51,7 +51,7 @@ function isAdult(age: number): boolean {
 console.log(isAdult(25));
 console.log(isAdult(15));
 
-// Function with Default Paramater
+// Function with Default Parameter
 function welcome(name: string = "Guest"): void {
     console.log("Hello" + name);
 }

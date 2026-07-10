@@ -58,7 +58,7 @@ function welcome(name: string = "Guest"): void {
 welcome();
 welcome("Shubham");
 
-// Functione with optional parameter
+// Function with optional parameter
 function student(name: string, city?: string): void {
     console.log("Name:", name);
 
@@ -69,3 +69,4 @@ function student(name: string, city?: string): void {
 
 student("Shubham");
 student("Rahul", "Pune");
+

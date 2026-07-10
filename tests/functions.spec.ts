@@ -58,7 +58,7 @@ function welcome(name: string = "Guest"): void {
 welcome();
 welcome("Shubham");
 
-// Function with optional parameter
+// Functione with optional parameter
 function student(name: string, city?: string): void {
     console.log("Name:", name);
 
